@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> cinematic</title>
+	<link rel="stylesheet" type="text/css" href="src/style.css" />
+	<script type="text/javascript" src="src/script.js"></script>
+</head>
+<body>
+	<div class="header">
+		physics cinematic
+	</div>
+	<br/>
+	<div class="main">
+		<div class="texts">
+			<div align="center">enter values in text boxes then press DRAW to see the moving</div>
+			help:each red dots is 1m<br/>
+			<form name="input">
+				displacement(X):<input type="text" name="X" width="10%"/>(m)
+				velocity(V):<input type="text" name="speed" width="10%"/>(m/s)
+				acceleration(V):<input type="text" name="acc" width="10%"/>(m/s^2)
+				<input type="button" value="DRAW" onclick="draw();"/>
+			</form>
+			<canvas id="newCanvas"width="1300" height="10000" style="border:3px solid #FF0000">Your browser does not support canvas tag.</canvas>
+		</div>
+	</div>
+</body>
+</html>
