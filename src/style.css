@@ -1,0 +1,21 @@
+.header{
+	width:100%;
+	background-color: #b5dcb3;
+	font-size: 40px;
+	text-align: center;
+	border:4px solid #b5eeb3 ;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius:100px;
+	min-height: 100px;
+}
+.main{
+	float:right;
+	width:100%;
+	min-height: 220px;
+	background-color: #FFcc33;
+	text-align: left;
+	border:3px solid #FF0000;
+	border-radius: 10px;
+}
+texts{
+}
