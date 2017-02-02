@@ -7,20 +7,25 @@
 </head>
 <body>
 	<div class="header">
-		physics cinematic
+        physics cinematic<br/>
+        <div style="font-size: 13px">the chart drawer</div>
 	</div>
 	<br/>
 	<div class="main">
 		<div class="texts">
-			<div align="center">enter values in text boxes then press DRAW to see the moving</div>
-			help:each red dots is 1m<br/>
+			<div align="center">enter values in text boxes then choose what type of chart you want then press draw to see th chart</div>
 			<form name="input">
 				displacement(X):<input type="text" name="X" width="10%"/>(m)
 				velocity(V):<input type="text" name="speed" width="10%"/>(m/s)
-				acceleration(V):<input type="text" name="acc" width="10%"/>(m/s^2)
-				<input type="button" value="DRAW" onclick="draw();"/>
+                acceleration(V):<input type="text" name="acc" width="10%"/>(m/s^2)<br/>
+                type of chart:<select name="type">
+                    <option>x-t</option>
+                    <option>v-t</option>
+                    <option>a-t</option>
+                </select>
+				<input type="button" value="DRAW" onclick="chartDraw();"/>
 			</form>
-			<canvas id="newCanvas"width="1300" height="10000" style="border:3px solid #FF0000">Your browser does not support canvas tag.</canvas>
+			<canvas id="Canvas"width="1300" height="10000" style="border:3px solid #FF0000">Your browser does not support canvas tag.</canvas>
 		</div>
 	</div>
 </body>
